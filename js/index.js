@@ -1,14 +1,5 @@
 /** @format */
 
-let header = document.getElementsByTagName("header")[0];
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 360) {
-    header.classList.add("headerJS");
-  } else {
-    header.classList.remove("headerJS");
-  }
-});
 /************************************************ */
 let menu = document.querySelector(".menu");
 let closeMenu = document.querySelector(".closeMenu");
@@ -65,4 +56,6 @@ for (let y = 0; y < contact.length; y++) {
   contact[y].addEventListener("mouseout", () => {
     contact[y].innerHTML = "contacter";
   });
+  contact[y].title = "Cliquez ici pour le consulter";
 }
+/*********************************************** */
