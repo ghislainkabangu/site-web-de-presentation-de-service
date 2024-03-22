@@ -7,6 +7,7 @@ body {
 }
 
 header {
+    background-color:#fa9a0a;
     padding: 5px;
 }
 
@@ -20,6 +21,7 @@ header {
     float: left;
     background-color: gainsboro;
     background-color: black;
+    background-color: #1d1d1d;
     transition: 0.5s ease-in-out;
 }
 
@@ -42,7 +44,8 @@ header {
 
 .menu ul li a {
     text-decoration: none;
-    color: #fa9a0a;
+    color: white;
+    font-weight: bold;
     display: block;
     padding: 5px;
     transition: 0.5s;
@@ -366,9 +369,8 @@ footer a:hover {
     font-weight: bold;
 }
 
-footer ul li {
+footer  div ul li {
     display: inline-block;
-    padding: 5px;
 }
 
 .footer_conact {
@@ -378,6 +380,9 @@ footer ul li {
 footer .ContactUs {
     color: #1d1d1d;
     font-weight: bold;
+}
+.Copyright{
+    padding-top: 55px;
 }
 
 @media screen and (max-width:800px) {
