@@ -3,10 +3,10 @@ body {
     padding: auto;
     background-color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #1d1d1d;
 }
 
 header {
-    background-color: gainsboro;
     padding: 5px;
 }
 
@@ -19,6 +19,7 @@ header {
     bottom: 1px;
     float: left;
     background-color: gainsboro;
+    background-color: black;
     transition: 0.5s ease-in-out;
 }
 
@@ -41,7 +42,7 @@ header {
 
 .menu ul li a {
     text-decoration: none;
-    color: white;
+    color: #fa9a0a;
     display: block;
     padding: 5px;
     transition: 0.5s;
@@ -79,38 +80,27 @@ header {
     padding: 20px;
     text-align: center;
     color: white;
-    background: linear-gradient(gray, rgba(139, 135, 135, 0.5)), url("album/fond.jpeg");
-    background-position: center;
+    /*color: #f49f1c;*/
+    background-color: #00154f;
+    background:
+        /*linear-gradient(gray, rgba(139, 135, 135, 0.5)),*/
+        url("album/arnold-francisca-f77Bh3inUpE-unsplash.jpg") center scroll no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-    animation: monAnimation 3s alternate infinite;
+
+    /* animation: monAnimation 3s alternate infinite;*/
 }
 
-@keyframes monAnimation {
-    form {
-        transition: ease 0.5s;
-        background: linear-gradient(gray, rgba(139, 135, 135, 0.5)), url("album/fond.jpeg");
-    }
-
-    to {
-        transition: ease 0.5s;
-        background: linear-gradient(gray, rgba(139, 135, 135, 0.5)), url("album/fondd.jpeg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-
-    }
-}
 
 .titre_principal h1 {
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
     top: 60px;
+    /* color: #f2bc94;*/
 }
 
 .titre_principal p {
+    color: white;
     font-weight: bold;
     position: relative;
     top: 50px;
@@ -121,7 +111,7 @@ header {
     margin: auto;
     margin-top: 50px;
     text-align: justify;
-    color: gray;
+    color: white;
     padding: 10px;
     width: 95%;
 }
@@ -129,7 +119,6 @@ header {
 .presentation h2 {
     letter-spacing: 5px;
     text-align: center;
-    color: rgb(255, 40, 111);
     text-transform: uppercase;
 }
 
@@ -137,64 +126,67 @@ header {
 .service {
     margin-top: 50px;
     padding: 10px;
+    background-color: #1d1d1d;
+
 }
 
 .service h2 {
     letter-spacing: 2px;
     text-align: center;
-    color: rgb(255, 40, 111);
+    color: #fa9a0a;
     text-transform: uppercase;
 }
 
 .banière_bloc_service {
     padding: 10px;
-    margin-top: 100px;
-    background-color: whitesmoke;
+    margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .banière_bloc_service div {
-    flex-basis: 40%;
-    margin-top: 30px;
-    padding: 5px;
-    color: black;
-    font-style: normal;
-    transition: ease 0.5s;
+    flex-basis: 45%;
+   
 }
-
-.banière_bloc_service div a {
-    color: gray;
-    text-decoration: none;
+.diaporamma{
+    box-sizing: content-box;
 }
-
-.banière_bloc_service div a:hover {
-    color: rgb(255, 40, 111);
+.diaporamma img{
+    width: 100%;
+    height: 100%;
 }
-
-.bloc_service_Js {
-    background-color: whitesmoke;
-    letter-spacing: 2px;
-    transition: ease 0.5s;
+.liste_service{
+    background-color: #fa9a0a;
+    border-radius: 10px;
+    cursor: pointer;
+    
 }
-
+.liste_service ul li{
+    list-style-type: circle;
+    padding: -2px;
+    color: #1d1d1d;
+}
+.liste_service ul li:hover{
+    color: white;
+}
 /******************************MEMBRE EQUIPE***************************************/
 .bloc_membre-equipe {
     text-align: center;
-    margin-top: 70px;
     padding: 10px;
+    background-color: #fa9a0a;
 }
 
 .bloc_membre-equipe h2 {
-    color: rgb(255, 40, 111);
+    color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
 
 }
 
 .membre-equipe {
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -206,26 +198,33 @@ header {
     box-sizing: content-box;
     padding: 10px;
     margin-top: 50px;
-    box-shadow: 1px 1px 5px gray;
     border-radius: 20px;
+    color: white;
     transition: ease-in-out 0.5s;
 }
 
 .membre-equipe div img {
-    width: 144px;
-    height: 144px;
+    width: 164px;
+    height: 164px;
     border-radius: 50%;
 }
 
 .membre-equipe div a {
     text-decoration: none;
-    color: rgb(255, 40, 111);
+    background-color: #1d1d1d;
+    color: white;
     border-radius: 5px;
     padding: 5px;
     text-transform: lowercase;
     transition: 0.5s;
 }
-
+.membre-equipe div h4{
+    font-weight: normal;
+}
+.name{
+    font-size: large;
+    font-weight: bold;
+}
 .bloc_membre_equipe_js {
     letter-spacing: 3px;
     position: relative;
@@ -235,7 +234,7 @@ header {
 
 /********************************FORMULAIRE DE CONTACT********************************/
 .blocContact {
-    margin-top: 100px;
+    margin-top: 70px;
     color: white;
     padding: 20px;
 }
@@ -244,96 +243,114 @@ header {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgb(255, 40, 111);
+    color: #fa9a0a;
 }
 
 form {
     margin: auto;
     margin-top: 100px;
     margin-bottom: 50px;
-    width: 80%;
+    width: 70%;
     text-align: center;
     padding: 20px;
-    box-shadow: 1px 1px 5px gainsboro;
+    background-color: #1d1d1d;
+    background-color: #fa9a0a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form legend {
     text-align: left;
+    color: #1d1d1d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form fieldset {
     border: none;
+    font-weight: bold;
 }
 
 form input {
     width: 45%;
-    height: 35px;
-    border: 1px solid gainsboro;
-    border-radius: 5px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
 }
 
 form input::-webkit-input-placeholder {
     padding: 5px;
     opacity: 0.5;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+form input:focus{
+    outline: 2px solid #1d1d1d;
+  
+}
 form select {
     width: 91%;
     height: 30px;
     border: 1px solid gainsboro;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form textarea {
     width: 90%;
     border: 1px solid gainsboro;
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form textarea:focus {
     outline: none;
-    border: 1px solid rgb(255, 40, 111);
+    border: 2px solid #1d1d1d;
 }
 
 form input[type="submit"],
 input[type="reset"] {
-
+background-color: #1d1d1d;
+font-weight: bold;
+color: white;
     height: 50px;
+    transition: 0.5s;
 
 }
 
 form input[type="submit"]:hover {
-    background-color: rgb(255, 40, 111);
-    color: white;
-    font-weight: bold;
-
+    background-color: #fa9a0a;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    transition: 0.5s;
 }
 
 input[type="reset"]:hover {
-    background-color: rgb(255, 40, 111);
-    color: white;
-    font-weight: bold;
+    background-color: #fa9a0a;
+    color: #1d1d1d;
+    border: 2px solid #1d1d1d;
+    transition: 0.5s;
 }
 
 /************************************************FOOTER*****************************/
 footer {
     margin: auto;
-    background-color: black;
-    background-color: gray;
-    color: white;
+    background-color: #fa9a0a;
+    color: #1d1d1d;
     padding: 20px;
     flex-basis: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 100px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
 footer div {
     flex-basis: 20%;
+
 }
 
 footer p {
@@ -342,7 +359,7 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: white;
+    color: #1d1d1d;
 }
 
 footer a:hover {
@@ -351,43 +368,34 @@ footer a:hover {
 
 footer ul li {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
+}
+
+.footer_conact {
+    border-right: 3px solid #1d1d1d;
 }
 
 footer .ContactUs {
-    color: rgb(255, 40, 111);
+    color: #1d1d1d;
     font-weight: bold;
 }
 
 @media screen and (max-width:800px) {
 
-    .service div {
-        flex-basis: 90%;
-    }
-
-    .banière_bloc_service {
-        margin-top: 50px;
-        margin-bottom: 0px;
-    }
-
     .banière_bloc_service div {
-        padding: 5px;
-
+        flex-basis: 100%;
     }
-
-    .bloc_service_Js {
-        letter-spacing: 0px;
+    .liste_service{
+        order: 0;
     }
-
+    .diaporamma{
+        order: 1;
+    }
     .membre-equipe div {
         text-align: center;
-        flex-basis: 40%;
+        flex-basis: 80%;
         margin-top: 50px;
         padding: 10px;
-    }
-
-    .membre-equipe div a {
-        display: none;
     }
 
     .bloc_membre_equipe_js {
@@ -396,18 +404,26 @@ footer .ContactUs {
         box-shadow: none;
 
     }
-
+    .blocContact{
+        margin-top: 30px;
+    }
     form {
-        width: 90%;
+        width: 95%;
         margin-top: 50px;
-        border-radius: 5px;
         padding: 5px;
     }
-
+    footer{
+        margin-top: 50px;
+    }
     footer div {
         flex-basis: 100%;
     }
-
+    .footer_conact{
+        border-left: 3px solid #1d1d1d;
+    }
+    footer div p {
+        text-align: center;
+    }
     footer ul {
         text-align: center;
     }
