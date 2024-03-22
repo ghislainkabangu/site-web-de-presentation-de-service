@@ -7,6 +7,7 @@
     <title>presentation-serviceWeb</title>
     <link rel="icon" href="album/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
 <body>
@@ -71,7 +72,24 @@
         <h2>Voici Nos Services {}</h2>
         <div class="banière_bloc_service">
             <div class="diaporamma">
-                <img src="album/svg5.png" alt="">
+                <section class="splide" aria-label="Exemple HTML de base de Splide">
+                    <div class="splide__track">
+                          <ul class="splide__list">
+                            <div class="splide__slide">
+                                <img src="album/svg.png" alt="">
+                            </div>
+                            <div class="splide__slide">
+                                <img src="album/svg2.png" alt="">
+                            </div>
+                            <div class="splide__slide">
+                                <img src="album/svg4.png" alt="">
+                            </div>
+                            <div class="splide__slide">
+                                <img src="album/svg5.png" alt="">
+                            </div>
+                          </ul>
+                    </div>
+                  </section>
             </div>
             <div class="liste_service">
                 <ul>
@@ -236,5 +254,21 @@
 
 </body>
 <script src="js/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function() {
+      var splide = new Splide( '.splide',{
+        type: "loop",
+        start: 1,
+          perPage: 1,
+          autoplay: true,
+            interval: 3000,
+            pagination: true,
+            focus: "center",
+      });
+      splide.mount();
+    } );
+    
+  </script>
 
 </html>
