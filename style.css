@@ -7,7 +7,6 @@ body {
 }
 
 header {
-    background-color:#fa9a0a;
     padding: 5px;
 }
 
@@ -83,14 +82,8 @@ header {
     padding: 20px;
     text-align: center;
     color: white;
-    /*color: #f49f1c;*/
-    background-color: #00154f;
-    background:
-        /*linear-gradient(gray, rgba(139, 135, 135, 0.5)),*/
-        url("album/arnold-francisca-f77Bh3inUpE-unsplash.jpg") center scroll no-repeat;
+    background:url("album/programming-background-with-person-working-with-codes-computer.jpg") center scroll no-repeat;
     background-size: cover;
-
-    /* animation: monAnimation 3s alternate infinite;*/
 }
 
 
@@ -99,12 +92,12 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
     top: 60px;
-    /* color: #f2bc94;*/
 }
 
 .titre_principal p {
     color: white;
     font-weight: bold;
+    font-size: 20px;
     position: relative;
     top: 50px;
 }
@@ -151,29 +144,36 @@ header {
 
 .banière_bloc_service div {
     flex-basis: 45%;
-   
+    height: 400px;
+
 }
-.diaporamma{
+
+.diaporamma {
     box-sizing: content-box;
 }
-.diaporamma img{
+
+.diaporamma img {
     width: 100%;
     height: 100%;
 }
-.liste_service{
+
+.liste_service {
     background-color: #fa9a0a;
     border-radius: 10px;
     cursor: pointer;
-    
+
 }
-.liste_service ul li{
+
+.liste_service ul li {
     list-style-type: circle;
     padding: -2px;
     color: #1d1d1d;
 }
-.liste_service ul li:hover{
+
+.liste_service ul li:hover {
     color: white;
 }
+
 /******************************MEMBRE EQUIPE***************************************/
 .bloc_membre-equipe {
     text-align: center;
@@ -221,13 +221,16 @@ header {
     text-transform: lowercase;
     transition: 0.5s;
 }
-.membre-equipe div h4{
+
+.membre-equipe div h4 {
     font-weight: normal;
 }
-.name{
+
+.name {
     font-size: large;
     font-weight: bold;
 }
+
 .bloc_membre_equipe_js {
     letter-spacing: 3px;
     position: relative;
@@ -284,10 +287,12 @@ form input::-webkit-input-placeholder {
     opacity: 0.5;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-form input:focus{
+
+form input:focus {
     outline: 2px solid #1d1d1d;
-  
+
 }
+
 form select {
     width: 91%;
     height: 30px;
@@ -312,9 +317,9 @@ form textarea:focus {
 
 form input[type="submit"],
 input[type="reset"] {
-background-color: #1d1d1d;
-font-weight: bold;
-color: white;
+    background-color: #1d1d1d;
+    font-weight: bold;
+    color: white;
     height: 50px;
     transition: 0.5s;
 
@@ -369,7 +374,7 @@ footer a:hover {
     font-weight: bold;
 }
 
-footer  div ul li {
+footer div ul li {
     display: inline-block;
 }
 
@@ -381,7 +386,8 @@ footer .ContactUs {
     color: #1d1d1d;
     font-weight: bold;
 }
-.Copyright{
+
+.Copyright {
     padding-top: 55px;
 }
 
@@ -390,12 +396,15 @@ footer .ContactUs {
     .banière_bloc_service div {
         flex-basis: 100%;
     }
-    .liste_service{
+
+    .liste_service {
         order: 0;
     }
-    .diaporamma{
+
+    .diaporamma {
         order: 1;
     }
+
     .membre-equipe div {
         text-align: center;
         flex-basis: 80%;
@@ -409,26 +418,33 @@ footer .ContactUs {
         box-shadow: none;
 
     }
-    .blocContact{
+
+    .blocContact {
         margin-top: 30px;
     }
+
     form {
         width: 95%;
         margin-top: 50px;
         padding: 5px;
     }
-    footer{
+
+    footer {
         margin-top: 50px;
     }
+
     footer div {
         flex-basis: 100%;
     }
-    .footer_conact{
+
+    .footer_conact {
         border-left: 3px solid #1d1d1d;
     }
+
     footer div p {
         text-align: center;
     }
+
     footer ul {
         text-align: center;
     }
