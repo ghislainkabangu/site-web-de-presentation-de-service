@@ -2,12 +2,12 @@ body {
     margin: auto;
     padding: auto;
     background-color: white;
+    color: black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #1d1d1d;
 }
 
 header {
-    background-color: #fa9a0a;
+    background-color: red;
     padding: 5px;
 }
 
@@ -19,9 +19,7 @@ header {
     left: -300px;
     bottom: 1px;
     float: left;
-    background-color: gainsboro;
-    background-color: black;
-    background-color: #1d1d1d;
+    background-color: gray;
     transition: 0.5s ease-in-out;
 }
 
@@ -79,388 +77,305 @@ header {
 
 /**************************************TITRE PRINCIPAL ET NOM DE LA FIRME**********************************/
 .titre_principal {
-    height: 350px;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    background: url("album/programming-background-with-person-working-with-codes-computer.jpg") center scroll no-repeat;
-    background-size: cover;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.titre_principal div {
+    flex-basis: 50%;
+    height: 400px;
+    box-sizing: content-box;
+}
 
-.titre_principal h1 {
-    font-size: 40px;
+.titre_principal_blocUn {
+    border-top: 1px solid white;
+    color: white;
+ 
+}
+
+.titre_principal_blocUn h1 {
+    font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative;
-    top: 60px;
+    
 }
 
-.titre_principal p {
-    color: white;
+.titre_principal_blocUn p {
     font-weight: bold;
     font-size: 20px;
-    position: relative;
-    top: 50px;
+    
+}
+.titre_principal_blocDeux{
+    text-align: center;
+}
+
+/*
+.titre_principal_blocDeux {
+    border-top: 1px solid white;
+    background: url("album/fond.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: AnimationFond 2s alternate infinite;
+}
+
+@keyframes AnimationFond {
+    form {
+        background: url("album/fond.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    to {
+        background: url("album/fond2.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }
 
 /**************************************TEXTE DE PRESENTATION*********************************************/
 .presentation {
     margin: auto;
     margin-top: 50px;
-    text-align: justify;
-    color: white;
-    padding: 10px;
     width: 95%;
-}
+    text-align: justify;
+    color: gray;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 
-.presentation h2 {
-    letter-spacing: 5px;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 /**********************************************BLOC SERVICE*************************************************/
 .service {
-    margin-top: 50px;
     padding: 10px;
-    background-color: #1d1d1d;
-
 }
 
 .service h2 {
-    letter-spacing: 2px;
     text-align: center;
-    color: #fa9a0a;
-    text-transform: uppercase;
+    color: #031145;
 }
 
-.banière_bloc_service {
-    padding: 10px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.service_bloc {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.banière_bloc_service div {
-    flex-basis: 45%;
-    height: 400px;
-
-}
-
-.diaporamma {
-    box-sizing: content-box;
+.service_bloc div {
+    flex-basis: 20%;
+    margin-top: 30px;
+    padding: 10px;
     text-align: center;
+    box-shadow: 0px 0px 2px gainsboro;
+    background-color: gray;
+    ;
+    color: gainsboro;
+    border-radius: 5px;
 }
 
-.diaporamma img {
-    width: 100%;
-    height: 100%;
+.service_bloc div svg {
+    width: 150px;
 }
 
-.splide {
-    position: relative;
-    bottom: 350px;
-    width: 100%;
-}
-
-.splide__slide {
-    width: 100%;
-}
-
-.liste_service {
-    background-color: #fa9a0a;
-    border-radius: 10px;
-    cursor: pointer;
-
-}
-
-.liste_service ul li {
-    list-style-type: circle;
-    color: #1d1d1d;
-}
-
-.liste_service ul li:hover {
-    color: white;
+.service_bloc div p {
+    text-align: justify;
 }
 
 /******************************MEMBRE EQUIPE***************************************/
 .bloc_membre-equipe {
+    margin-top: 100px;
     text-align: center;
     padding: 10px;
-    background-color: #fa9a0a;
+    background-color: gray;
 }
 
 .bloc_membre-equipe h2 {
     color: white;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
 }
 
-.membre-equipe {
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.membre-equipe div {
-    text-align: center;
-    flex-basis: 25%;
-    box-sizing: content-box;
-    padding: 10px;
-    margin-top: 50px;
-    border-radius: 20px;
-    color: white;
-    transition: ease-in-out 0.5s;
-}
-
-.membre-equipe div img {
-    width: 164px;
-    height: 164px;
-    border-radius: 50%;
-}
-
-.membre-equipe div a {
-    text-decoration: none;
-    background-color: #1d1d1d;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    text-transform: lowercase;
-    transition: 0.5s;
-}
-
-.membre-equipe div h4 {
-    font-weight: normal;
-}
-
-.name {
-    font-size: large;
-    font-weight: bold;
-}
-
-.bloc_membre_equipe_js {
-    letter-spacing: 3px;
-    position: relative;
-    bottom: 10px;
-    transition: 0.5s ease-in-out;
-}
 
 /********************************FORMULAIRE DE CONTACT********************************/
 .blocContact {
-    margin-top: 70px;
+    margin-top: 100px;
     color: white;
     padding: 20px;
 }
 
 .blocContact h2 {
     text-align: center;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fa9a0a;
+    color: #031145;
 }
 
-form {
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    width: 70%;
+.localisationEtcontact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.localisationEtcontact div {
+    flex-basis: 45%;
+    margin: 20px;
+}
+
+.localisation {
+    border: 1px solid royalblue;
+}
+
+.localisation h3 {
+    color: black;
+}
+
+.contact {
     text-align: center;
-    padding: 20px;
-    background-color: #1d1d1d;
-    background-color: #fa9a0a;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-form legend {
-    text-align: left;
-    color: #1d1d1d;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.contact h3 {
+    color: black;
 }
 
-form fieldset {
-    border: none;
-    font-weight: bold;
+.contact form {
+    padding: 10px;
+    background-color: gray;
 }
 
-form input {
-    width: 45%;
-    height: 40px;
-    border: none;
-    border-radius: 2px;
-}
-
-form input::-webkit-input-placeholder {
-    padding: 5px;
-    opacity: 0.5;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-form input:focus {
-    outline: 2px solid #1d1d1d;
-
-}
-
-form select {
-    width: 91%;
-    height: 30px;
-    border: 1px solid gainsboro;
-    border-radius: 2px;
-    padding: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-form textarea {
-    width: 90%;
-    border: 1px solid gainsboro;
-    border-radius: 2px;
-    padding: 5px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-form textarea:focus {
-    outline: none;
-    border: 2px solid #1d1d1d;
-}
-
-form input[type="submit"],
-input[type="reset"] {
-    background-color: #1d1d1d;
-    font-weight: bold;
+.contact form legend {
     color: white;
-    height: 50px;
-    transition: 0.5s;
-
+    text-align: left;
 }
 
-form input[type="submit"]:hover {
-    background-color: #fa9a0a;
-    color: #1d1d1d;
-    border: 2px solid #1d1d1d;
-    transition: 0.5s;
+.contact form input {
+    width: 45%;
+    height: 30px;
+    outline-color: red;
 }
 
-input[type="reset"]:hover {
-    background-color: #fa9a0a;
-    color: #1d1d1d;
-    border: 2px solid #1d1d1d;
-    transition: 0.5s;
+.contact form input::-webkit-input-placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    opacity: 0.4;
+}
+
+.contact form textarea {
+    width: 92%;
+    outline-color: red;
+}
+
+.contact form textarea::-webkit-input-placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    opacity: 0.4;
 }
 
 /************************************************FOOTER*****************************/
 footer {
     margin: auto;
-    background-color: #fa9a0a;
-    color: #1d1d1d;
+    background-color: gray;
+    color: white;
     padding: 20px;
     flex-basis: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 100px;
+    margin-top: 200px;
     cursor: pointer;
-    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-footer div {
+footer h2 {
+    text-align: center;
+}
+
+.bloc_footer_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bloc_footer_div div {
     flex-basis: 20%;
 
 }
 
-footer p {
+.bloc_footer_div div p {
     text-align: left;
+    transition: 0.5s;
 }
 
-footer a {
+.bloc_footer_div div p:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.bloc_footer_div div a {
     text-decoration: none;
-    color: #1d1d1d;
+    color: white;
+    transition: 0.5s;
 }
 
-footer a:hover {
-    font-weight: bold;
+.bloc_footer_div div a:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
 }
 
-footer div ul li {
+.bloc_footer_div div ul li {
     display: inline-block;
-}
 
-.footer_conact {
-    border-right: 3px solid #1d1d1d;
-}
-
-footer .ContactUs {
-    color: #1d1d1d;
-    font-weight: bold;
 }
 
 .Copyright {
-    padding-top: 55px;
+    font-size: small;
+    text-align: center;
+    color: gainsboro;
 }
 
 @media screen and (max-width:800px) {
-
-    .banière_bloc_service div {
+    .titre_principal div {
         flex-basis: 100%;
     }
 
-    .liste_service {
-        order: 0;
+   
+
+    .titre_principal_blocDeux {
+        border-top: none;
     }
 
-    .diaporamma {
-        order: 1;
-    }
-
-    .membre-equipe div {
-        text-align: center;
-        flex-basis: 80%;
-        margin-top: 50px;
-        padding: 10px;
-    }
-
-    .bloc_membre_equipe_js {
-        position: relative;
-        bottom: 0px;
-        box-shadow: none;
-
+    .service_bloc div {
+        flex-basis: 100%;
     }
 
     .blocContact {
-        margin-top: 30px;
+        padding: 0px;
     }
 
-    form {
-        width: 95%;
-        margin-top: 50px;
-        padding: 5px;
+    .localisationEtcontact div {
+        flex-basis: 100%;
+
     }
 
     footer {
-        margin-top: 50px;
+        margin-top: 150px;
     }
 
-    footer div {
+
+    .bloc_footer_div div {
         flex-basis: 100%;
     }
 
-    .footer_conact {
-        border-left: 3px solid #1d1d1d;
-    }
-
-    footer div p {
+    .bloc_footer_div div p,
+    h3 {
         text-align: center;
     }
 
-    footer ul {
+
+    .bloc_footer_div div ul {
         text-align: center;
     }
 
-    footer ul li {
+
+    .bloc_footer_div div ul li {
         display: inline-block;
         padding: 0px;
     }
