@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: red;
+    background-color: rgb(255, 0, 119);
     padding: 5px;
 }
 
@@ -84,30 +84,36 @@ header {
 }
 
 .titre_principal div {
-    flex-basis: 50%;
+    flex-basis: 48%;
+    box-sizing: content-box;
+    overflow: hidden;
     height: 400px;
     box-sizing: content-box;
 }
 
 .titre_principal_blocUn {
-    border-top: 1px solid white;
     color: white;
- 
 }
 
 .titre_principal_blocUn h1 {
     font-size: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
 }
 
 .titre_principal_blocUn p {
     font-weight: bold;
     font-size: 20px;
-    
+
 }
-.titre_principal_blocDeux{
+
+.titre_principal_blocDeux {
     text-align: center;
+}
+
+.titre_principal_blocDeux img {
+    width: 100%;
+    height: 100%
 }
 
 /*
@@ -190,7 +196,7 @@ header {
     margin-top: 100px;
     text-align: center;
     padding: 10px;
-    background-color: gray;
+    background-color: rgb(255, 0, 119);
 }
 
 .bloc_membre-equipe h2 {
@@ -336,7 +342,7 @@ footer h2 {
         flex-basis: 100%;
     }
 
-   
+
 
     .titre_principal_blocDeux {
         border-top: none;
