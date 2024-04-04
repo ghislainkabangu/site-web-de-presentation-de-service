@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>presentation-serviceWeb</title>
     <link rel="icon" href="album/favicon-32x32.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Faustina:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -33,14 +48,9 @@
     <div class="titre_principal">
         <div class="titre_principal_blocUn">
 
-            <h1>Le cercle des codeurs ! </h1>
+            <h1>Le cercle des codeurs. </h1>
             <h2>Trouvez ce qui vous rend unique car votre image guidera votre public </h2>
-            <h4>C'est la qualité qui compte et mettez votre entreprise en avant</h4>
-
-            <ul>
-                <li><a href="#">commencer</a></li>
-                <li><a href="#">contacter</a></li>
-            </ul>
+            <h4>Comme c'est la qualité qui compte alors mettez votre entreprise en avant</h4>
         </div>
         <div class="titre_principal_blocDeux">
             <img src="album/logo.png" id="image" alt="image dev">
@@ -283,14 +293,14 @@
     </div>
     <!----bloc du formulaire de contact-->
     <div id="contact" class="blocContact">
+        <!--
         <h2><svg width="18" height="18" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
                     fill="#031145" fill-rule="evenodd" />
-            </svg> Localistaion et contact</h2>
+            </svg> Localistaion et contact</h2>-->
         <div class="localisationEtcontact">
-            <div class="localisation">
-                <h3>localisation</h3>
+            <div id="map" class="localisation">
             </div>
             <div class="contact">
                 <form action="" method="" enctype="">
@@ -307,7 +317,7 @@
                     <textarea name="" id="" cols="60" rows="5" required
                         placeholder="Decrivez-nous votre besoin ici"></textarea>
                     <br><br>
-                    <input type="submit" title="cliquez pour confirmer l'envoie"> <input type="reset"
+                    <input type="submit" title="cliquez pour confirmer l'envoie"> <input type="reset" value="annuler"
                         title="cliquez pour annuler l'envoie">
 
                 </form>
@@ -316,7 +326,7 @@
     </div>
     <!---le footer / pied de page-->
     <footer id="footer">
-        <h2>Coding for life </h2>
+        <h2>Le cercle des codeurs </h2>
         <hr>
         <div class="bloc_footer_div">
             <div class="footer_conact">
@@ -385,22 +395,26 @@
     </footer>
 
 </body>
-<script src="js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide', {
-            type: "loop",
-            start: 1,
-            perPage: 1,
-            autoplay: true,
-            interval: 3000,
-            pagination: true,
-            focus: "center",
-        });
-        splide.mount();
-    });
-
+    var map = L.map('map').setView([-4.325, 15.322222], 13);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    var marker = L.marker([51.5, -0.09]).addTo(map);
+    var circle = L.circle([51.508, -0.11], {
+        color: 'red',
+        fillColor: '#f03',
+        fillOpacity: 0.5,
+        radius: 500
+    }).addTo(map);
+    var polygon = L.polygon([
+        [51.509, -0.08],
+        [51.503, -0.06],
+        [51.51, -0.047]
+    ]).addTo(map);
 </script>
+<script src="js/index.js"></script>
+
 
 </html>

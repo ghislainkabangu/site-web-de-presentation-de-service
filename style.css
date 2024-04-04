@@ -45,9 +45,11 @@ header {
     color: white;
     font-weight: bold;
     display: block;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
     transition: 0.5s;
 }
+
 
 .menu ul li a:hover {
     font-weight: bold;
@@ -87,7 +89,7 @@ header {
     flex-basis: 48%;
     box-sizing: content-box;
     overflow: hidden;
-    height: 400px;
+    height: 450px;
     box-sizing: content-box;
 }
 
@@ -96,15 +98,27 @@ header {
 }
 
 .titre_principal_blocUn h1 {
-    font-size: 50px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2px;
 
 }
 
-.titre_principal_blocUn p {
-    font-weight: bold;
-    font-size: 20px;
+.titre_principal_blocUn h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
+.titre_principal_blocUn h2 {
+    font-size: 30px;
+}
+
+.titre_principal_blocUn h2,
+h4 {
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .titre_principal_blocDeux {
@@ -116,40 +130,13 @@ header {
     height: 100%
 }
 
-/*
-.titre_principal_blocDeux {
-    border-top: 1px solid white;
-    background: url("album/fond.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: AnimationFond 2s alternate infinite;
-}
-
-@keyframes AnimationFond {
-    form {
-        background: url("album/fond.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    to {
-        background: url("album/fond2.jpeg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-}
-
 /**************************************TEXTE DE PRESENTATION*********************************************/
 .presentation {
     margin: auto;
     margin-top: 50px;
     width: 95%;
     text-align: justify;
-    color: gray;
+    color: black;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -157,12 +144,8 @@ header {
 
 /**********************************************BLOC SERVICE*************************************************/
 .service {
+    margin-top: 60px;
     padding: 10px;
-}
-
-.service h2 {
-    text-align: center;
-    color: #031145;
 }
 
 .service_bloc {
@@ -172,14 +155,14 @@ header {
 }
 
 .service_bloc div {
-    flex-basis: 20%;
+    flex-basis: 19%;
     margin-top: 30px;
     padding: 10px;
     text-align: center;
     box-shadow: 0px 0px 2px gainsboro;
-    background-color: gray;
-    ;
-    color: gainsboro;
+    background-color: rgb(255, 0, 119);
+    background-color: rgb(255, 0, 119);
+    color: white;
     border-radius: 5px;
 }
 
@@ -187,8 +170,15 @@ header {
     width: 150px;
 }
 
+.service_bloc div h3 {
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
 .service_bloc div p {
     text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /******************************MEMBRE EQUIPE***************************************/
@@ -196,7 +186,7 @@ header {
     margin-top: 100px;
     text-align: center;
     padding: 10px;
-    background-color: rgb(255, 0, 119);
+    background-color: gainsboro;
 }
 
 .bloc_membre-equipe h2 {
@@ -224,24 +214,21 @@ header {
 }
 
 .localisationEtcontact div {
-    flex-basis: 45%;
+
     margin: 20px;
 }
 
 .localisation {
-    border: 1px solid royalblue;
-}
-
-.localisation h3 {
-    color: black;
+    flex-basis: 55%;
 }
 
 .contact {
+    flex-basis: 30%;
     text-align: center;
 }
 
-.contact h3 {
-    color: black;
+.contact form {
+    border-radius: 5px;
 }
 
 .contact form {
@@ -264,6 +251,15 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 5px;
     opacity: 0.4;
+}
+
+.contact form input [type=submit] {
+
+    padding-bottom: 50px;
+}
+
+.contact form input[type="reset"] {
+    margin-bottom: 20px;
 }
 
 .contact form textarea {
@@ -292,6 +288,10 @@ footer {
 
 footer h2 {
     text-align: center;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
 }
 
 .bloc_footer_div {
@@ -342,18 +342,30 @@ footer h2 {
         flex-basis: 100%;
     }
 
+    .titre_principal_blocUn h1,
+    h2,
+    h4 {
+        padding-left: 20px;
+    }
 
-
-    .titre_principal_blocDeux {
-        border-top: none;
+    .service {
+        margin-top: 50px;
     }
 
     .service_bloc div {
         flex-basis: 100%;
     }
 
+    .bloc_membre-equipe {
+        margin-top: 50px;
+    }
+
     .blocContact {
         padding: 0px;
+    }
+
+    #map {
+        height: 350px;
     }
 
     .localisationEtcontact div {
@@ -365,7 +377,6 @@ footer h2 {
         margin-top: 150px;
     }
 
-
     .bloc_footer_div div {
         flex-basis: 100%;
     }
@@ -375,11 +386,9 @@ footer h2 {
         text-align: center;
     }
 
-
     .bloc_footer_div div ul {
         text-align: center;
     }
-
 
     .bloc_footer_div div ul li {
         display: inline-block;
