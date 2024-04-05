@@ -403,13 +403,13 @@ footer h2 {
 
 @media screen and (max-width:660px) {
     .titre_principal div {
-        height: 430px;
+        height: 400px;
     }
 }
 
 @media screen and (max-width:600px) {
     .titre_principal div {
-        height: 430px;
+        height: 450px;
     }
 }
 
