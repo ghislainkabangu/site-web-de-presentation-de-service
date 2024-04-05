@@ -403,7 +403,7 @@ footer h2 {
 
 @media screen and (max-width:660px) {
     .titre_principal div {
-        height: 400px;
+        height: 430px;
     }
 }
 
@@ -415,6 +415,6 @@ footer h2 {
 
 @media screen and (max-width:500px) {
     .titre_principal div {
-        height: 550px;
+        height: 510px;
     }
 }
