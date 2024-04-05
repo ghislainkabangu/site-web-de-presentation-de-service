@@ -1,70 +1,420 @@
 body {
     margin: auto;
-    background-color: whitesmoke;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: auto;
+    background-color: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-section {
-    margin: auto;
-    margin-top: 50px;
-    width: 500px;
-    padding: 20px;
-    background-color: white;
+header {
+    background-color: rgb(255, 0, 119);
+    padding: 5px;
+}
+
+.menu {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    left: -300px;
+    bottom: 1px;
+    float: left;
+    background-color: gray;
+    transition: 0.5s ease-in-out;
+}
+
+.menuInjs {
+    left: -0%;
+    transition: 0.5s ease-in-out;
+}
+
+.menu ul {
+    padding-top: 10px;
+    position: relative;
+    right: 30px;
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: block;
+    padding-top: 30px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+
+.menu ul li a:hover {
+    font-weight: bold;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.closeMenu {
+    cursor: pointer;
+    float: right;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.closeMenu:hover {
+    font-size: 30px;
+    transition: 0.5s;
+}
+
+.openMenu {
+    cursor: pointer;
+    padding: 5px;
+}
+
+/**************************************TITRE PRINCIPAL ET NOM DE LA FIRME**********************************/
+.titre_principal {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titre_principal div {
+    flex-basis: 48%;
+    box-sizing: content-box;
+    overflow: hidden;
+    height: 400px;
     box-sizing: content-box;
 }
 
-section h1 {
-    text-align: center;
-    padding: 10px 0px;
+.titre_principal_blocUn {
     color: white;
-    background-color: royalblue;
+}
+
+.titre_principal_blocUn h1 {
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 2px;
 
 }
 
-form {
+.titre_principal_blocUn h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titre_principal_blocUn h2 {
+    font-size: 30px;
+}
+
+.titre_principal_blocUn h2,
+h4 {
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.titre_principal_blocDeux {
+    text-align: center;
+}
+
+.titre_principal_blocDeux img {
+    width: 100%;
+    height: 100%
+}
+
+/**************************************TEXTE DE PRESENTATION*********************************************/
+.presentation {
     margin: auto;
+    margin-top: 50px;
+    width: 95%;
+    text-align: justify;
+    color: black;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.masterInput {
+/**********************************************BLOC SERVICE*************************************************/
+.service {
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.service_bloc {
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-form .title {
-    color: royalblue;
-}
-
-form input {
-    width: 70%;
-    height: 30px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 2px solid gray;
-    outline: none;
-}
-
-form input:focus {
-    border: 3px solid royalblue;
-    transition: all 0.5s ease;
-}
-
-.base {
-    text-align: center;
-    margin-top: 20px;
-}
-
-button {
-    cursor: pointer;
-}
-
-.copyright {
-    text-align: center;
-    font-size: small;
+.service_bloc div {
+    flex-basis: 19%;
     margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 0, 119);
+    color: whitesmoke;
+    border-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px
 }
 
-@media screen and (max-width:700px) {
-    section {
-        width: 80%;
+.service_bloc div svg {
+    width: 50px;
+    height: 100px;
+}
+
+.service_bloc div h3 {
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.service_bloc div p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************************MEMBRE EQUIPE***************************************/
+.bloc_membre-equipe {
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+    background-color: gainsboro;
+}
+
+.bloc_membre-equipe h2 {
+    color: white;
+}
+
+
+/********************************FORMULAIRE DE CONTACT********************************/
+.blocContact {
+    margin-top: 100px;
+    color: white;
+    padding: 20px;
+}
+
+.blocContact h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: #031145;
+}
+
+.localisationEtcontact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.localisationEtcontact div {
+
+    margin: 20px;
+}
+
+.localisation {
+    flex-basis: 55%;
+}
+
+.contact {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.contact form {
+    border-radius: 5px;
+}
+
+.contact form {
+    padding: 10px;
+    background-color: gray;
+}
+
+.contact form legend {
+    color: white;
+    text-align: left;
+}
+
+.contact form input {
+    width: 45%;
+    height: 30px;
+    outline-color: red;
+}
+
+.contact form input::-webkit-input-placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    opacity: 0.4;
+}
+
+.contact form input [type=submit] {
+
+    padding-bottom: 50px;
+}
+
+.contact form input[type="reset"] {
+    margin-bottom: 20px;
+}
+
+.contact form textarea {
+    width: 92%;
+    outline-color: red;
+}
+
+.contact form textarea::-webkit-input-placeholder {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 5px;
+    opacity: 0.4;
+}
+
+/************************************************FOOTER*****************************/
+footer {
+    margin: auto;
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    flex-basis: 100%;
+    margin-top: 200px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+footer h2 {
+    text-align: center;
+    font-family: "Faustina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.bloc_footer_div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bloc_footer_div div {
+    flex-basis: 20%;
+
+}
+
+.bloc_footer_div div p {
+    text-align: left;
+    transition: 0.5s;
+}
+
+.bloc_footer_div div p:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.bloc_footer_div div a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.bloc_footer_div div a:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+
+.bloc_footer_div div ul li {
+    display: inline-block;
+
+}
+
+.Copyright {
+    font-size: small;
+    text-align: center;
+    color: gainsboro;
+}
+
+@media screen and (max-width:1050px) {
+    .titre_principal div {
+        flex-basis: 100%;
+        height: 300px;
     }
 
+    .titre_principal_blocUn h1,
+    h2,
+    h4 {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    .service {
+        margin-top: 50px;
+    }
+
+    .service_bloc div {
+        flex-basis: 100%;
+    }
+
+    .bloc_membre-equipe {
+        margin-top: 50px;
+    }
+
+    .blocContact {
+        padding: 0px;
+    }
+
+    #map {
+        height: 350px;
+    }
+
+    .localisationEtcontact div {
+        flex-basis: 100%;
+
+    }
+
+    footer {
+        margin-top: 150px;
+    }
+
+    .bloc_footer_div div {
+        flex-basis: 100%;
+    }
+
+    .bloc_footer_div div p,
+    h3 {
+        text-align: center;
+    }
+
+    .bloc_footer_div div ul {
+        text-align: center;
+    }
+
+    .bloc_footer_div div ul li {
+        display: inline-block;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .titre_principal div {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .titre_principal div {
+        height: 430px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .titre_principal div {
+        height: 450px;
+    }
 }
