@@ -297,33 +297,33 @@
                 <div class="splide__list">
                     <div class="splide__slide">
                         <img src="album/austin-distel-97HfVpyNR1M-unsplash.jpg" alt="image dev">
+                        <h3>ghislain kab's</h3>
+                        <h4>Dev web fullstack</h4>
+                    </div>
+                    <div class="splide__slide">
+                        <img src="album/grzegorz-walczak-yoIIPcrWhjI-unsplash.jpg" alt="image dev">
+                        <h3>john samy</h3>
+                        <h4>Developpeur desktop java</h4>
+                    </div>
+                    <div class="splide__slide">
+                        <img src="album/fond.jpg" alt="image dev">
                         <h3>Henri de la braise</h3>
                         <h4>Dev web fullstack</h4>
                     </div>
                     <div class="splide__slide">
-                        <img src="album/austin-distel-97HfVpyNR1M-unsplash.jpg" alt="image dev">
-                        <h3>Henri de la braise</h3>
+                        <img src="album/thought-catalog-Nv-vx3kUR2A-unsplash.jpg" alt="image dev">
+                        <h3>Merveille miss</h3>
                         <h4>Dev web fullstack</h4>
                     </div>
                     <div class="splide__slide">
-                        <img src="album/austin-distel-97HfVpyNR1M-unsplash.jpg" alt="image dev">
-                        <h3>Henri de la braise</h3>
-                        <h4>Dev web fullstack</h4>
+                        <img src="album/mohammad-hossein-mirzagol-uvUMP4FtEXw-unsplash.jpg" alt="image dev">
+                        <h3>Richard richman</h3>
+                        <h4>Developpeur mobile </h4>
                     </div>
                     <div class="splide__slide">
-                        <img src="album/austin-distel-97HfVpyNR1M-unsplash.jpg" alt="image dev">
-                        <h3>Henri de la braise</h3>
-                        <h4>Dev web fullstack</h4>
-                    </div>
-                    <div class="splide__slide">
-                        <img src="album/austin-distel-97HfVpyNR1M-unsplash.jpg" alt="image dev">
-                        <h3>Henri de la braise</h3>
-                        <h4>Dev web fullstack</h4>
-                    </div>
-                    <div class="splide__slide">
-                        <img src="album/austin-distel-97HfVpyNR1M-unsplash.jpg" alt="image dev">
-                        <h3>Henri de la braise</h3>
-                        <h4>Dev web fullstack</h4>
+                        <img src="album/surface-S_YOuAUMm2o-unsplash.jpg" alt="image dev">
+                        <h3>Divne et Grâce</h3>
+                        <h4>Expertes en marketing digital</h4>
                     </div>
 
                 </div>
@@ -437,7 +437,25 @@
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        var splide = new Splide('.splide');
+        var splide = new Splide('.splide', {
+            width: "100%",
+            start: 0,
+            perPage: 3,
+            gap: "50px",
+            pagination: true,
+            focus: "center",
+            type: "loop",
+            autoplay: true,
+            interval: 2000,
+            breakpoints: {
+                1000: {
+                    perPage: 2
+                },
+                700: {
+                    perPage: 1
+                },
+            }
+        });
         splide.mount();
     });
 </script>

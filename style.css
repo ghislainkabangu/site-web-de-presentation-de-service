@@ -162,8 +162,6 @@ h4 {
     background-color: rgb(255, 0, 119);
     color: whitesmoke;
     border-radius: 10px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px
 }
 
 .service_bloc div svg {
@@ -184,17 +182,28 @@ h4 {
 
 /******************************MEMBRE EQUIPE***************************************/
 .bloc_membre-equipe {
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     background-color: gainsboro;
 }
 
 .bloc_membre-equipe h2 {
     color: white;
 }
-
-
+.bloc_membre-equipe div{
+    text-align: center;
+}
+.splide__list div{
+    width: 200px;
+    margin-top: 30px;
+    border-radius: 2px solid black;
+   
+}
+.splide__list div img{
+    width: 100%;
+    height: 300px;
+}
 /********************************FORMULAIRE DE CONTACT********************************/
 .blocContact {
     margin-top: 100px;
@@ -234,7 +243,7 @@ h4 {
 
 .contact form {
     padding: 10px;
-    background-color: gray;
+    background-color:gainsboro;
 }
 
 .contact form legend {
@@ -244,8 +253,10 @@ h4 {
 
 .contact form input {
     width: 45%;
+    border: none;
     height: 30px;
-    outline-color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    outline-color: rgb(255, 0, 119);
 }
 
 .contact form input::-webkit-input-placeholder {
@@ -255,7 +266,6 @@ h4 {
 }
 
 .contact form input [type=submit] {
-
     padding-bottom: 50px;
 }
 
@@ -264,8 +274,9 @@ h4 {
 }
 
 .contact form textarea {
+    border: none;
     width: 92%;
-    outline-color: red;
+    outline-color: rgb(255, 0, 119);
 }
 
 .contact form textarea::-webkit-input-placeholder {
