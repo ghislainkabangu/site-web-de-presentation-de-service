@@ -425,7 +425,7 @@ footer h2 {
 }
 
 @media screen and (max-width:500px) {
-    .titre_principal div {
-        height: 510px;
+    .titre_principal .titre_principal_blocUn  {
+        height: 550px;
     }
 }
