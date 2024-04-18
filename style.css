@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: rgb(255, 0, 119);
+    background-color: rgba(255, 0, 119, 0.682);
     padding: 5px;
 }
 
@@ -101,10 +101,6 @@ header {
     font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 2px;
-
-}
-
-.titre_principal_blocUn h1 {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
@@ -146,12 +142,16 @@ h4 {
 .service {
     margin-top: 60px;
     padding: 10px;
+    background-color: rgba(255, 0, 119, 0.682);
 }
 
 .service_bloc {
+    margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
 .service_bloc div {
@@ -159,9 +159,9 @@ h4 {
     margin-top: 30px;
     padding: 10px;
     text-align: center;
-    background-color: rgb(255, 0, 119);
-    color: whitesmoke;
-    border-radius: 10px;
+    background-color: white;
+    color: gray;
+    border-radius: 10px
 }
 
 .service_bloc div svg {
@@ -171,12 +171,13 @@ h4 {
 
 .service_bloc div h3 {
     font-family: "Faustina", serif;
-    font-optical-sizing: auto;
+    color: rgb(255, 0, 119);
     font-style: normal;
 }
 
 .service_bloc div p {
     text-align: justify;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -185,14 +186,13 @@ h4 {
     margin-top: 150px;
     text-align: center;
     padding: 20px;
-    background-color: gainsboro;
 }
 
-.bloc_membre-equipe h2 {
-    color: white;
-}
 .bloc_membre-equipe div{
     text-align: center;
+}
+.bloc_membre-equipe div h3{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .splide__list div{
     width: 200px;
@@ -369,7 +369,7 @@ footer h2 {
     }
 
     .service_bloc div {
-        flex-basis: 100%;
+        flex-basis: 85%;
     }
 
     .bloc_membre-equipe {
