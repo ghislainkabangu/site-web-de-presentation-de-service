@@ -12,7 +12,7 @@ openMenu.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   menu.classList.remove("menuInjs");
 });
-/*******************************LES LIENS DE NAVIGATION********************************* */
+/*******************************les liens de navigation******************************** */
 
 let link = document.querySelectorAll(".link");
 for (let x = 0; x < link.length; x++) {
@@ -28,4 +28,4 @@ image.addEventListener("mouseover", () => {
 image.addEventListener("mouseout", () => {
   image.src = "album/logo.png";
 });
-/*********************************** */
+/************************************** ************/
