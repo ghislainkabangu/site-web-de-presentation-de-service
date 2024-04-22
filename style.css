@@ -158,7 +158,7 @@ header {
 /**************************************TEXTE DE PRESENTATION*********************************************/
 .presentation {
     margin: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     width: 95%;
     text-align: justify;
     color: black;
@@ -294,7 +294,7 @@ header {
 
 /********************************FORMULAIRE DE CONTACT********************************/
 .blocContact {
-    margin-top: 100px;
+    margin-top: 150px;
     color: white;
     padding: 20px;
 }
@@ -380,7 +380,7 @@ footer {
     color: white;
     padding: 20px;
     flex-basis: 100%;
-    margin-top: 200px;
+    margin-top: 150px;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -474,7 +474,7 @@ footer h2 {
     }
 
     .bloc_membre-equipe {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     .blocContact {
