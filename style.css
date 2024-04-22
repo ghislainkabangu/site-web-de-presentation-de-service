@@ -119,6 +119,7 @@ header {
     font-style: oblique;
 
 }
+
 .titre_principal_blocUn ul {
     list-style-type: none;
     text-align: center;
@@ -138,13 +139,15 @@ header {
     border-radius: 2px;
     transition: ease 0.5s;
 }
-.titre_principal_blocUn ul li a:hover{
+
+.titre_principal_blocUn ul li a:hover {
     background-color: inherit;
     border: 2px solid rgba(255, 0, 51, 0.682);
     color: rgba(255, 0, 51, 0.682);
     font-weight: bold;
     transition: ease 0.5s;
 }
+
 .titre_principal_blocDeux {
     text-align: center;
     padding: 10px;
@@ -458,6 +461,7 @@ footer h2 {
     .titre_principal div {
         flex-basis: 100%;
     }
+
     .titre_principal_blocDeux img {
         padding-bottom: 30px;
     }
@@ -512,10 +516,11 @@ footer h2 {
         padding: 0px;
     }
 }
-@media screen and (max-width:500px){
+
+@media screen and (max-width:500px) {
     .titre_principal_blocUn ul li {
-       display: block;
-       padding: 15px;
+        display: block;
+        padding: 15px;
     }
-    
+
 }
