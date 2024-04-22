@@ -142,7 +142,6 @@ h4 {
 .service {
     margin-top: 60px;
     padding: 10px;
-    background-color: rgba(255, 0, 119, 0.682);
 }
 
 .service_bloc {
@@ -161,6 +160,8 @@ h4 {
     text-align: center;
     background-color: white;
     color: gray;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px gainsboro;
     border-radius: 10px
 }
 
