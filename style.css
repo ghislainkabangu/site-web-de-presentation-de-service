@@ -82,7 +82,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color:gainsboro;
+    background-color: gainsboro;
 }
 
 .titre_principal div {
@@ -100,9 +100,11 @@ header {
     font-weight: 400;
     font-style: normal;
 }
-.codeurs{
+
+.codeurs {
     color: rgba(255, 0, 51, 0.682);
 }
+
 .titre_principal_blocUn h2 {
     font-size: 30px;
 }
@@ -116,11 +118,12 @@ h4 {
 
 .titre_principal_blocDeux {
     text-align: center;
+    padding: 10px;
 }
 
 .titre_principal_blocDeux img {
     width: 100%;
-    height: 100%
+    height: 400px;
 }
 
 /**************************************TEXTE DE PRESENTATION*********************************************/
@@ -194,22 +197,26 @@ h4 {
 
 .bloc_membre-equipe div h3 {
     font-family: Arial, Helvetica, sans-serif;
-  font-size: medium;
+    font-size: medium;
 }
-.bloc_membre-equipe div .fonction{
+
+.bloc_membre-equipe div .fonction {
     font-size: small;
     color: rgba(255, 0, 51, 0.682);
 }
-.bloc_membre-equipe div p{
+
+.bloc_membre-equipe div p {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
-.splide__list div{
+
+.splide__list div {
     border-radius: 10px;
     background-color: white;
     padding: 10px;
     margin-bottom: 30px;
 }
+
 .splide__list div {
     width: 200px;
     margin-top: 30px;
@@ -307,7 +314,7 @@ h4 {
 /************************************************FOOTER*****************************/
 footer {
     margin: auto;
-    background-color:rgba(255, 0, 51, 0.682);
+    background-color: rgba(255, 0, 51, 0.682);
     color: white;
     padding: 20px;
     flex-basis: 100%;
@@ -370,23 +377,27 @@ footer h2 {
     color: gainsboro;
 }
 
-@media screen and (max-width:1150px){
+@media screen and (max-width:1150px) {
     .service_bloc div {
         flex-basis: 45%;
     }
 }
+
 @media screen and (max-width:1050px) {
+
     .titre_principal_blocUn h1,
     h2,
     h4 {
         padding-left: 20px;
     }
 }
-@media screen and (max-width:970px){
+
+@media screen and (max-width:970px) {
     .titre_principal div {
-        flex-basis:100%;
+        flex-basis: 100%;
     }
 }
+
 @media screen and (max-width:800px) {
 
     .service {
