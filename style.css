@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: rgba(255, 0, 119, 0.682);
+    background-color: rgba(255, 0, 51, 0.682);
     padding: 5px;
 }
 
@@ -161,18 +161,19 @@ h4 {
     background-color: white;
     color: gray;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px gainsboro;
+    box-shadow: 0px 0px 10px gainsboro;
     border-radius: 10px
 }
 
-.service_bloc div svg {
-    width: 50px;
-    height: 100px;
+.service_bloc div img {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
 }
 
 .service_bloc div h3 {
     font-family: "Faustina", serif;
-    color: rgb(255, 0, 119);
+    color: rgba(255, 0, 51, 0.682);
     font-style: normal;
 }
 
@@ -187,24 +188,42 @@ h4 {
     margin-top: 150px;
     text-align: center;
     padding: 20px;
+    background-color: rgba(255, 0, 51, 0.682);
 }
 
-.bloc_membre-equipe div{
+.bloc_membre-equipe div {
     text-align: center;
 }
-.bloc_membre-equipe div h3{
+
+.bloc_membre-equipe div h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bloc_membre-equipe div .fonction{
+    font-size: small;
+}
+.bloc_membre-equipe div p{
+    text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
 }
 .splide__list div{
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.splide__list div {
     width: 200px;
     margin-top: 30px;
     border-radius: 2px solid black;
-   
+
 }
-.splide__list div img{
+
+.splide__list div img {
     width: 100%;
-    height: 300px;
+    height: 200px;
+    border-radius: 10px;
 }
+
 /********************************FORMULAIRE DE CONTACT********************************/
 .blocContact {
     margin-top: 100px;
@@ -244,7 +263,7 @@ h4 {
 
 .contact form {
     padding: 10px;
-    background-color:gainsboro;
+    background-color: gainsboro;
 }
 
 .contact form legend {
@@ -289,7 +308,7 @@ h4 {
 /************************************************FOOTER*****************************/
 footer {
     margin: auto;
-    background-color: gray;
+    background-color:rgba(255, 0, 51, 0.682);
     color: white;
     padding: 20px;
     flex-basis: 100%;
@@ -304,6 +323,8 @@ footer h2 {
     font-family: "Faustina", serif;
     font-optical-sizing: auto;
     font-style: normal;
+    letter-spacing: 2px;
+    font-size: 30px;
 
 }
 
@@ -426,7 +447,7 @@ footer h2 {
 }
 
 @media screen and (max-width:500px) {
-    .titre_principal .titre_principal_blocUn  {
+    .titre_principal .titre_principal_blocUn {
         height: 550px;
     }
 }
