@@ -107,15 +107,44 @@ header {
 
 .titre_principal_blocUn h2 {
     font-size: 30px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.titre_principal_blocUn h2,
-h4 {
+.titre_principal_blocUn h4 {
     font-family: "Faustina", serif;
     font-optical-sizing: auto;
-    font-style: normal;
+    text-align: center;
+    color: white;
+    font-style: oblique;
+
+}
+.titre_principal_blocUn ul {
+    list-style-type: none;
+    text-align: center;
 }
 
+.titre_principal_blocUn ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.titre_principal_blocUn ul li a {
+    text-decoration: none;
+    background-color: rgba(255, 0, 51, 0.682);
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+    transition: ease 0.5s;
+}
+.titre_principal_blocUn ul li a:hover{
+    background-color: inherit;
+    border: 2px solid rgba(255, 0, 51, 0.682);
+    color: rgba(255, 0, 51, 0.682);
+    font-weight: bold;
+    transition: ease 0.5s;
+}
 .titre_principal_blocDeux {
     text-align: center;
     padding: 10px;
@@ -157,12 +186,18 @@ h4 {
     flex-basis: 19%;
     margin-top: 30px;
     padding: 10px;
+    padding-bottom: 20px;
     text-align: center;
-    background-color: white;
     color: gray;
     border-radius: 10px;
     box-shadow: 0px 0px 10px gainsboro;
-    border-radius: 10px
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.service_bloc div h3 {
+    font-family: "Faustina", serif;
+    font-style: normal;
 }
 
 .service_bloc div img {
@@ -171,16 +206,42 @@ h4 {
     border-radius: 10px;
 }
 
-.service_bloc div h3 {
-    font-family: "Faustina", serif;
-    color: rgba(255, 0, 51, 0.682);
-    font-style: normal;
-}
-
 .service_bloc div p {
     text-align: justify;
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.service_bloc div a {
+    background-color: white;
+    border: 2px solid rgba(255, 0, 51, 0.682);
+    color: rgba(255, 0, 51, 0.682);
+    border-radius: 5px;
+    padding: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.service_bloc div a:hover {
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.newClass {
+    background-color: rgba(255, 0, 51, 0.682);
+    transition: ease-in-out 0.5s;
+}
+
+.newClass a {
+    border: none;
+}
+
+.newClass h3 {
+    color: white;
+}
+
+.newClass p {
+    color: white;
 }
 
 /******************************MEMBRE EQUIPE***************************************/
@@ -208,6 +269,7 @@ h4 {
 .bloc_membre-equipe div p {
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+    color: gray;
 }
 
 .splide__list div {
@@ -250,7 +312,6 @@ h4 {
 }
 
 .localisationEtcontact div {
-
     margin: 20px;
 }
 
@@ -270,6 +331,7 @@ h4 {
 .contact form {
     padding: 10px;
     background-color: gainsboro;
+    bottom: gray;
 }
 
 .contact form legend {
@@ -396,6 +458,9 @@ footer h2 {
     .titre_principal div {
         flex-basis: 100%;
     }
+    .titre_principal_blocDeux img {
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (max-width:800px) {
@@ -417,7 +482,7 @@ footer h2 {
     }
 
     #map {
-        height: 350px;
+        height: 550px;
     }
 
     .localisationEtcontact div {
