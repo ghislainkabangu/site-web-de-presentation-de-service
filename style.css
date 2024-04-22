@@ -512,3 +512,10 @@ footer h2 {
         padding: 0px;
     }
 }
+@media screen and (max-width:500px){
+    .titre_principal_blocUn ul li {
+       display: block;
+       padding: 15px;
+    }
+    
+}
