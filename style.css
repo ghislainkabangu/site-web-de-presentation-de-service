@@ -79,33 +79,30 @@ header {
 
 /**************************************TITRE PRINCIPAL ET NOM DE LA FIRME**********************************/
 .titre_principal {
-    background-color: gray;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    background-color:gainsboro;
 }
 
 .titre_principal div {
     flex-basis: 48%;
     box-sizing: content-box;
     overflow: hidden;
-    height: 400px;
     box-sizing: content-box;
 }
 
-.titre_principal_blocUn {
-    color: white;
-}
-
 .titre_principal_blocUn h1 {
-    font-size: 60px;
+    font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 2px;
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;
 }
-
+.codeurs{
+    color: rgba(255, 0, 51, 0.682);
+}
 .titre_principal_blocUn h2 {
     font-size: 30px;
 }
@@ -197,9 +194,11 @@ h4 {
 
 .bloc_membre-equipe div h3 {
     font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
 }
 .bloc_membre-equipe div .fonction{
     font-size: small;
+    color: rgba(255, 0, 51, 0.682);
 }
 .bloc_membre-equipe div p{
     text-align: justify;
@@ -371,19 +370,23 @@ footer h2 {
     color: gainsboro;
 }
 
-@media screen and (max-width:1050px) {
-    .titre_principal div {
-        flex-basis: 100%;
-        height: 300px;
+@media screen and (max-width:1150px){
+    .service_bloc div {
+        flex-basis: 45%;
     }
-
+}
+@media screen and (max-width:1050px) {
     .titre_principal_blocUn h1,
     h2,
     h4 {
         padding-left: 20px;
     }
 }
-
+@media screen and (max-width:970px){
+    .titre_principal div {
+        flex-basis:100%;
+    }
+}
 @media screen and (max-width:800px) {
 
     .service {
@@ -431,23 +434,5 @@ footer h2 {
     .bloc_footer_div div ul li {
         display: inline-block;
         padding: 0px;
-    }
-}
-
-@media screen and (max-width:660px) {
-    .titre_principal div {
-        height: 400px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .titre_principal div {
-        height: 450px;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .titre_principal .titre_principal_blocUn {
-        height: 550px;
     }
 }
