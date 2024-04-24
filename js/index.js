@@ -21,7 +21,7 @@ for (let x = 0; x < link.length; x++) {
   });
 }
 /**********************gestion des interactions images********************** */
-
+/*
 let image = document.getElementById("image");
 image.addEventListener("mouseover", () => {
   image.src = "album/fond2.png";
