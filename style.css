@@ -114,38 +114,9 @@ header {
 .titre_principal_blocUn h4 {
     font-family: "Faustina", serif;
     font-optical-sizing: auto;
-    text-align: center;
     color: white;
     font-style: oblique;
 
-}
-
-.titre_principal_blocUn ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-.titre_principal_blocUn ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px;
-}
-
-.titre_principal_blocUn ul li a {
-    text-decoration: none;
-    background-color: rgba(255, 0, 51, 0.682);
-    color: white;
-    padding: 10px;
-    border-radius: 2px;
-    transition: ease 0.5s;
-}
-
-.titre_principal_blocUn ul li a:hover {
-    background-color: inherit;
-    border: 2px solid rgba(255, 0, 51, 0.682);
-    color: rgba(255, 0, 51, 0.682);
-    font-weight: bold;
-    transition: ease 0.5s;
 }
 
 .titre_principal_blocDeux {
@@ -155,7 +126,7 @@ header {
 
 .titre_principal_blocDeux img {
     width: 100%;
-    height: 400px;
+    height: 450px;
 }
 
 /**************************************TEXTE DE PRESENTATION*********************************************/
@@ -515,12 +486,4 @@ footer h2 {
         display: inline-block;
         padding: 0px;
     }
-}
-
-@media screen and (max-width:500px) {
-    .titre_principal_blocUn ul li {
-        display: block;
-        padding: 15px;
-    }
-
 }
